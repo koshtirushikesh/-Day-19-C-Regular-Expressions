@@ -14,8 +14,6 @@ namespace RegexDemo
         public static string phone_number = "[1-9]{2}[' ']?[1-9]{1}[0-9]{9}";
         public static string password = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
 
-        
-
         public bool validateUserName(string UserName)
         {
             return Regex.IsMatch(UserName, User_Name);
