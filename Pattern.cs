@@ -12,6 +12,7 @@ namespace RegexDemo
         
         public static string User_Name = "^[A-Z]{1}[a-z]{2,9}$";
         public static string phone_number = "[1-9]{2}[' ']?[1-9]{1}[0-9]{9}";
+        public static string password = "[a-z]{8,12}";
 
         
 
@@ -24,7 +25,10 @@ namespace RegexDemo
         {
             return Regex.IsMatch(PhoneNumber, phone_number);
         }
-
+        public bool ValidatePassword(string Password)
+        {
+            return Regex.IsMatch(Password, password);
+        }
         
     }
 }
