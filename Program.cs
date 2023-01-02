@@ -1,4 +1,6 @@
-﻿namespace RegexDemo
+﻿using System.Text.RegularExpressions;
+
+namespace RegexDemo
 {
     internal class Program
     {
@@ -29,6 +31,20 @@
             {
                 Console.WriteLine(" not a valid Last Name ");
             }
+
+            Console.WriteLine("Enter a Phone Number");
+            string PhoneNumber = Console.ReadLine();
+
+            if (pattern.validatePhoneNumber(PhoneNumber))
+            {
+                Console.WriteLine(" valid phone number ");
+            }
+            else
+            {
+                Console.WriteLine(" not a valid phone number ");
+            }
+
+
         }
     }
 }
