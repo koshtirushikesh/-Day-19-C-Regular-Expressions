@@ -17,6 +17,18 @@
             {
                 Console.WriteLine(" not a valid First Name ");
             }
+
+            Console.WriteLine("Enter a Last Name:");
+            string UserLastName = Console.ReadLine();
+
+            if (pattern.validateUserName(UserLastName))
+            {
+                Console.WriteLine(" valid Last Name ");
+            }
+            else
+            {
+                Console.WriteLine(" not a valid Last Name ");
+            }
         }
     }
 }
